@@ -10082,18 +10082,18 @@ h6,
 }
 
 ::-moz-selection {
-    background: #ffa722;
-    color: #27282a
+    background: #6610f2;
+    color: white
 }
 
 ::-webkit-selection {
-    background: #ffa722;
-    color: #27282a
+    background: #6610f2;
+    color: white
 }
 
 ::selection {
-    background: #ffa722;
-    color: #27282a
+    background: #6610f2;
+    color: white
 }
 
 @media screen {

@@ -16,69 +16,10 @@
 		<!-- Open graph settings (social networks sharing settings) -->
 		<!-- Open graph settings end -->
 	</head>
-
-	<style>
-		.marquee-container
-		{
-			overflow: hidden;
-			width: 100%;
-			height: 8vh;
-		}
-
-		.marquee img, .marquee_right img{
-			height:5.2vw;
-		}
-
-		.marquee {
-			top: 0;
-			left: 100%;
-			width: 100%;
-			overflow: hidden;
-			position: absolute;
-			white-space: nowrap;
-			animation: marquee 20s linear infinite;
-		}
-
-		.marquee2 {
-			animation-delay: 10s;
-		}
-		.marquee_right {
-			top: 0;
-			right: 100%;
-			width: 100%;
-			overflow: hidden;
-			position: absolute;
-			white-space: nowrap;
-			animation: marquee_right 20s linear infinite;
-		}
-
-		.marquee2_right {
-			animation-delay: 10s;
-		}
-
-
-		@keyframes marquee {
-			0% {
-				left: 100%;
-			}
-			100% {
-				left: -100%
-			}
-		}
-
-		@keyframes marquee_right {
-			0% {
-				right: 100%;
-			}
-			100% {
-				right: -100%
-			}
-		}
-	</style>
-	<body>
+<body>
 
 <!-- Navigation 8 -->
-<nav class="bg-bg-3 sticky-top py-4 py-lg-7">
+<nav class="bg-custom-blank sticky-top py-4 py-lg-7">
 	<div class="d-block d-lg-none">
 		<div class="container">
 			<div class="row align-items-center">
@@ -91,7 +32,9 @@
 					</a>
 				</div>
 				<div class="col-6 text-center" data-aos="fade-down" data-aos-delay="250">
-					<img src="i/mini-logo-long.png" alt="" class="img-fluid aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
+					<a href="index.html">
+						<img src="i/mini-logo-long.png" alt="" class="img-fluid aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
+					</a>
 				</div>
 				<div class="col-3" data-aos="fade-down" data-aos-delay="500">
 				</div>
@@ -112,7 +55,7 @@
 		</div>
 		<div class="offcanvas-body">
 			<div>
-				<a href="#" class="fw-bold text-dark-1 py-2 d-inline-block">
+				<a href="about.html" class="fw-bold text-dark-1 py-2 d-inline-block">
 O nas
 				</a>
 			</div>
@@ -159,15 +102,34 @@ Dokumenty
 		<div class="container">
 			<div class="row justify-content-between align-items-center">
 				<div class="col-8">
-					<a href="#">
+					<a href="index.html">
 						<img src="i/mini-logo.png" alt="" class="img-fluid me-4" data-aos="fade-down" data-aos-delay="0">
 					</a>
-					<a href="#" class="fw-bold mx-4 text-dark-1" data-aos-delay="150" data-aos="fade-down">
+					<a href="about.html" class="fw-bold mx-4 text-dark-1" data-aos-delay="150" data-aos="fade-down">
 								O nas
 					</a>
-					<a href="#" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="250">
-								Archiwum
-					</a>
+					<div class="d-inline-block dropdown">
+						<a class="fw-bold mx-4 text-dark-1 dropdown-toggle" id="custom-id-yvnry76o" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" type="button" data-aos="fade-down" data-aos-delay="250">
+									Archiwum
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="custom-id-yvnry76o">
+							<li>
+								<a class="dropdown-item" href="zdjecia.html">
+									Zdjęcia
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="transmisje.html">
+									Transmisje
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="wywiady.html">
+									Wywiady
+								</a>
+							</li>
+						</ul>
+					</div>
 					<a href="#" class="fw-bold mx-4 text-dark-1" data-aos="fade-down" data-aos-delay="400">
 								Dokumenty
 					</a>
@@ -204,6 +166,76 @@ Dokumenty
 		</div>
 	</div>
 </nav>
+<!-- Showcase 5 -->
+<section class="py-10 py-lg-20 bg-bg-3">
+	<div class="container">
+		<div class="row justify-content-between align-items-center mb-15">
+			<div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+				<h2 class="display-5 mb-4 mb-lg-0" data-aos="fade-down" data-aos-delay="0">
+							Wywiady
+				</h2>
+			</div>
+			<div class="col-md-9 col-lg-5">
+				<p class="fs-2 mb-0" data-aos="fade-down" data-aos-delay="150">
+				</p>
+			</div>
+		</div>
+		<div class="row" data-aos="fade-down" data-aos-delay="250">
+			<div class="mb-6 col-md-6">
+				<a href="#" class="d-block mb-4 bg-repeat-none bg-size-fit-x bg-position-center" style="height: 370px;" data-bg-src="i/wywiad1.png">
+				</a>
+				<div class="row justify-content-between">
+					<div class="col">
+						<h5 class="fw-5 fs-1">
+									archiwalny wywiad z prof. Anną Kramek-Klicką z listopada 2019 roku
+						</h5>
+					</div>
+					<div class="col-auto">
+						<a href="#" class="d-block">
+							<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3844 6.96912C15.4541 6.89927 15.5368 6.84386 15.628 6.80605C15.7191 6.76824 15.8168 6.74878 15.9154 6.74878C16.0141 6.74878 16.1117 6.76824 16.2029 6.80605C16.294 6.84386 16.3767 6.89927 16.4464 6.96912L20.9464 11.4691C21.0162 11.5388 21.0717 11.6216 21.1095 11.7127C21.1473 11.8038 21.1667 11.9015 21.1667 12.0001C21.1667 12.0988 21.1473 12.1965 21.1095 12.2876C21.0717 12.3787 21.0162 12.4615 20.9464 12.5311L16.4464 17.0311C16.3056 17.1719 16.1146 17.2511 15.9154 17.2511C15.7162 17.2511 15.5252 17.1719 15.3844 17.0311C15.2436 16.8903 15.1645 16.6993 15.1645 16.5001C15.1645 16.301 15.2436 16.1099 15.3844 15.9691L19.3549 12.0001L15.3844 8.03112C15.3146 7.96145 15.2591 7.87869 15.2213 7.78757C15.1835 7.69645 15.1641 7.59877 15.1641 7.50012C15.1641 7.40147 15.1835 7.30379 15.2213 7.21267C15.2591 7.12155 15.3146 7.03879 15.3844 6.96912Z">
+								</path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M3.16602 12C3.16602 11.8011 3.24503 11.6103 3.38569 11.4697C3.52634 11.329 3.7171 11.25 3.91602 11.25H19.666C19.8649 11.25 20.0557 11.329 20.1963 11.4697C20.337 11.6103 20.416 11.8011 20.416 12C20.416 12.1989 20.337 12.3897 20.1963 12.5303C20.0557 12.671 19.8649 12.75 19.666 12.75H3.91602C3.7171 12.75 3.52634 12.671 3.38569 12.5303C3.24503 12.3897 3.16602 12.1989 3.16602 12Z">
+								</path>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="mb-6 col-md-6">
+				<a href="#" class="d-block mb-4 bg-size-fit-x bg-position-center bg-repeat-none" style="height: 370px;" data-bg-src="i/wywiad2.png">
+				</a>
+				<div class="row justify-content-between">
+					<div class="col">
+						<h5 class="fw-5 fs-1">
+									archiwalny wywiad z prof. Anną Kramek-Klicką z listopada 2018 roku
+						</h5>
+					</div>
+					<div class="col-auto">
+						<a href="#" class="d-block">
+							<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-dark-1">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3844 6.96912C15.4541 6.89927 15.5368 6.84386 15.628 6.80605C15.7191 6.76824 15.8168 6.74878 15.9154 6.74878C16.0141 6.74878 16.1117 6.76824 16.2029 6.80605C16.294 6.84386 16.3767 6.89927 16.4464 6.96912L20.9464 11.4691C21.0162 11.5388 21.0717 11.6216 21.1095 11.7127C21.1473 11.8038 21.1667 11.9015 21.1667 12.0001C21.1667 12.0988 21.1473 12.1965 21.1095 12.2876C21.0717 12.3787 21.0162 12.4615 20.9464 12.5311L16.4464 17.0311C16.3056 17.1719 16.1146 17.2511 15.9154 17.2511C15.7162 17.2511 15.5252 17.1719 15.3844 17.0311C15.2436 16.8903 15.1645 16.6993 15.1645 16.5001C15.1645 16.301 15.2436 16.1099 15.3844 15.9691L19.3549 12.0001L15.3844 8.03112C15.3146 7.96145 15.2591 7.87869 15.2213 7.78757C15.1835 7.69645 15.1641 7.59877 15.1641 7.50012C15.1641 7.40147 15.1835 7.30379 15.2213 7.21267C15.2591 7.12155 15.3146 7.03879 15.3844 6.96912Z">
+								</path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M3.16602 12C3.16602 11.8011 3.24503 11.6103 3.38569 11.4697C3.52634 11.329 3.7171 11.25 3.91602 11.25H19.666C19.8649 11.25 20.0557 11.329 20.1963 11.4697C20.337 11.6103 20.416 11.8011 20.416 12C20.416 12.1989 20.337 12.3897 20.1963 12.5303C20.0557 12.671 19.8649 12.75 19.666 12.75H3.91602C3.7171 12.75 3.52634 12.671 3.38569 12.5303C3.24503 12.3897 3.16602 12.1989 3.16602 12Z">
+								</path>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Footer 4 -->
+	<footer class="bg-bg-3 pb-md-8 pt-md-10 py-8 text-center">
+		<div class="container">
+			<div class="mb-8 border-bottom border-dark-3" data-aos="fade-down" data-aos-delay="400">
+			</div>
+			<p class="fs-5 mb-0" data-aos="fade-down" data-aos-delay="500">
+						Festiwal Małych Form Teatralnych „12 Minut”
+			</p>
+		</div>
+	</footer>
 
 
 		<script>

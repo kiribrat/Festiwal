@@ -16,65 +16,6 @@
 		<!-- Open graph settings (social networks sharing settings) -->
 		<!-- Open graph settings end -->
 	</head>
-
-	<style>
-		.marquee-container
-		{
-			overflow: hidden;
-			width: 100%;
-			height: 8vh;
-		}
-
-		.marquee img, .marquee_right img{
-			height:5.2vw;
-		}
-
-		.marquee {
-			top: 0;
-			left: 100%;
-			width: 100%;
-			overflow: hidden;
-			position: absolute;
-			white-space: nowrap;
-			animation: marquee 20s linear infinite;
-		}
-
-		.marquee2 {
-			animation-delay: 10s;
-		}
-		.marquee_right {
-			top: 0;
-			right: 100%;
-			width: 100%;
-			overflow: hidden;
-			position: absolute;
-			white-space: nowrap;
-			animation: marquee_right 20s linear infinite;
-		}
-
-		.marquee2_right {
-			animation-delay: 10s;
-		}
-
-
-		@keyframes marquee {
-			0% {
-				left: 100%;
-			}
-			100% {
-				left: -100%
-			}
-		}
-
-		@keyframes marquee_right {
-			0% {
-				right: 100%;
-			}
-			100% {
-				right: -100%
-			}
-		}
-	</style>
 	<body>
 
 <!-- Navigation 8 -->
@@ -91,7 +32,9 @@
 					</a>
 				</div>
 				<div class="col-6 text-center" data-aos="fade-down" data-aos-delay="250">
-					<img src="i/mini-logo-long.png" alt="" class="img-fluid aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
+					<a href="index.html">
+						<img src="i/mini-logo-long.png" alt="" class="img-fluid aos-init aos-animate" data-aos="fade-down" data-aos-delay="0">
+					</a>
 				</div>
 				<div class="col-3" data-aos="fade-down" data-aos-delay="500">
 				</div>
@@ -159,15 +102,34 @@ Dokumenty
 		<div class="container">
 			<div class="row justify-content-between align-items-center">
 				<div class="col-8">
-					<a href="#">
+					<a href="index.html">
 						<img src="i/mini-logo-inv.png" alt="" class="img-fluid me-4" data-aos="fade-down" data-aos-delay="0">
 					</a>
 					<a href="about.html" class="fw-bold mx-4 text-light-1" data-aos-delay="150" data-aos="fade-down">
 								O nas
 					</a>
-					<a href="#" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="250">
-								Archiwum
-					</a>
+					<div class="d-inline-block dropdown">
+						<a class="fw-bold mx-4 text-light-1 dropdown-toggle" id="custom-id-yvnry76o" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" type="button" data-aos="fade-down" data-aos-delay="250">
+									Archiwum
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="custom-id-yvnry76o">
+							<li>
+								<a class="dropdown-item" href="zdjecia.html">
+									Zdjęcia
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="transmisje.html">
+									Transmisje
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="wywiady.html">
+									Wywiady
+								</a>
+							</li>
+						</ul>
+					</div>
 					<a href="#" class="fw-bold mx-4 text-light-1" data-aos="fade-down" data-aos-delay="400">
 								Dokumenty
 					</a>
@@ -277,8 +239,8 @@ Dokumenty
 								<img src="i/szefowie3.png" alt="" class="img-fluid my-md-15 my-8" data-aos="fade-down" data-aos-delay="250">
 							</div>
 							<div class="col-10">
-								<p class="mb-0 fs-1 text-light-1 fw-3 lh-lg font-body text-start" data-aos="fade-down" data-aos-delay="500" style="font-size: 2rem">
-									<span style="font-size: 1.75rem">
+								<p class="mb-0 fs-1 text-light-1 fw-3 lh-lg font-body text-start" data-aos="fade-down" data-aos-delay="500" style="font-size: 1.5rem">
+									<span style="font-size: 1.3rem">
 										<span style="font-weight: 500;display:inline;">
 													szefowe festiwalu:
 										</span>
